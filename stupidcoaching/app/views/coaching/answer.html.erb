@@ -1,0 +1,17 @@
+<h1>Coaching#answer</h1>
+
+<%= @query %>
+
+<br>
+
+<% if @query == "I am going to work right now!" %>
+   <%= "" %>
+  <% elsif @query.include?("?") %>
+    <%= "Silly question, get dressed and go to work!"%>
+  <% else %>
+    <%= "I don't care, get dressed and go to work!"%>
+<% end %>
+
+<br>
+
+<%= link_to "Ask a new question", ask_path %>
